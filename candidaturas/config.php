@@ -8,11 +8,11 @@
   // LIBS es la constante que tiene la direccion de la libreria de clases
   define('LIBS','libs/');
   // DB_HOST es la constante que tiene el dato de host de la base de datos
-  define('DB_HOST', 'localhost');
+  define('DB_HOST', '');
   // DB_USER es la constante que tiene el dato de usuario de la base de datos
-  define('DB_USER', 'root');
+  define('DB_USER', '');
   // DB_PASS es la constante que tiene el dato de contraseña de la base de datos
-  define('DB_PASS', 'root');
+  define('DB_PASS', '');
   // DB_NAME es la constante que tiene el dato del nombre de la base de datos
-  define('DB_NAME', 'sitio_nova');
+  define('DB_NAME', '');
 ?>
