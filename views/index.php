@@ -331,18 +331,8 @@
 <script src="<?php echo URL?>public/js/jquery-1.11.1.js"></script> 
 <script src="<?php echo URL?>public/js/bootstrap.min.js"></script> 
 <script type="text/javascript">
-  
-  $("#laSerena").hover(function(){$("#comuna").html('Comuna de La Serena');});	
-  $("#laSerena").click(function()
-  {
-      /*alert('serena');*/
-      $.ajax({
-          url:"<?php echo URL?>index/serena",
-          success : function(data){
-              $("#carga").html(data);
-          }
-      });
-  });	
+  $('.collapse').collapse();
+  $("#laSerena").hover(function(){$("#comuna").html('Comuna de La Serena');});	  
   $("#paihuano").hover(function(){$("#comuna").html('Comuna de Paihuano');});	
   $("#rioHurtado").hover(function(){$("#comuna").html('Comuna de Río Hurtado');});	
   $("#laHiguera").hover(function(){$("#comuna").html('Comuna de La Higuera');});	
@@ -357,7 +347,16 @@
   $("#combarbala").hover(function(){$("#comuna").html('Comuna de Combarbalá');});	
   $("#canela").hover(function(){$("#comuna").html('Comuna de Canela');});	
   $("#punitaqui").hover(function(){$("#comuna").html('Comuna de Punitaqui');});	
-    
+  $("#laSerena").click(function()
+  {
+      /*alert('serena');*/
+      $.ajax({
+          url:"<?php echo URL?>index/serena",
+          success : function(data){
+              $("#carga").html(data);
+          }
+      });
+  });	  
     
 </script>
 </body>
