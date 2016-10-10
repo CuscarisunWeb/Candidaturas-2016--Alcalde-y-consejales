@@ -17,7 +17,7 @@
     <tbody>
           <tr>
            <td style="width:10%;">
-            <img src="<?php echo URL?>images/alcaldes/30011.jpg" alt="" class="center-block" width="150" height="150">
+            <img src="<?php echo URL?>images/alcaldes/30018.jpg" alt="" class="center-block" width="150" height="150">
             </td>
             <td style="vertical-align:middle;">
                 <h4>Nombre1 Nombre2</h4>
@@ -32,7 +32,7 @@
                 <h4>Lista 0-26</h4>
             </td>
             <td style="vertical-align:middle;">
-                <a role="button" data-toggle="collapse" href="#col01" aria-expanded="false" aria-controls="collapseExample">
+                <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="50.333px" height="50.25px" viewBox="0 0 688.333 516.25" enable-background="new 0 0 688.333 516.25"
                  xml:space="preserve">
@@ -42,18 +42,14 @@
                 </a>
             </td>
         </tr>
-         <tr class="collapse" id="col01">
-         <td colspan="2" style="text-align:center;">
+         <tr class="collapse" id="collapseExample">
+         <td colspan="5">
             <div>    
             Profesión/actividad: Técnico Agrícola<br>
             Edad: 65 años<br>
             Estado civil: Casado(a)<br>
             <br>
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button><br>
+            FacebookTwitterSitio webPatrimonio declarado<br>
             <br>
             2004-2012: Concejal por La Serena<br>
             2012-2016: Alcalde de La Serena<br>
@@ -64,9 +60,6 @@
             Alcaldes 2012, La Serena 67,97%<br>
             </div>
          </td>
-         <td>noticia 1</td>
-         <td>noticia 2</td>
-         <td>noticia 3</td>
         </tr> 
         <tr>
            <td style="width:10%;">
@@ -85,7 +78,7 @@
                 <h4>Lista 0-26</h4>
             </td>
             <td style="vertical-align:middle;">
-                <a class="" role="button" data-toggle="collapse" href="#col02" aria-expanded="false" aria-controls="collapseExample">
+                <a class="" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  width="50.333px" height="50.25px" viewBox="0 0 688.333 516.25" enable-background="new 0 0 688.333 516.25"
                  xml:space="preserve">
@@ -95,7 +88,7 @@
                 </a>
             </td>
         </tr>
-         <tr class="collapse" id="col02">
+         <tr class="collapse" id="collapseExample">
          <td colspan="5">
             <div class="well">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur.

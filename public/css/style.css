@@ -1,0 +1,56 @@
+#nombre-columna{
+    background-color:#666666; 
+    min-height:50px; 
+    text-align:center;
+    margin-bottom: 1em;
+    width: 100%;
+    
+}
+.select:hover{
+    cursor: pointer;
+}
+#laSerena:hover{
+    fill :#64b8c6;
+}
+#paihuano:hover{
+    fill :#64b8c6;
+}
+#rioHurtado:hover{
+    fill :#64b8c6;
+} 
+#laHiguera:hover{
+     fill :#64b8c6;
+}
+#andacollo:hover{
+     fill :#64b8c6;
+}
+#vicuna:hover{
+     fill :#64b8c6;
+}
+#coquimbo:hover{
+     fill :#64b8c6;
+}
+#ovalle:hover{
+     fill :#64b8c6;
+}
+#montePatria:hover{
+     fill :#64b8c6;
+}
+#salamanca:hover{
+     fill :#64b8c6;
+}
+#illapel:hover{
+     fill :#64b8c6;
+}
+#losVilos:hover{
+     fill :#64b8c6;
+}
+#combarbala:hover{
+     fill :#64b8c6;
+}
+#canela:hover{
+     fill :#64b8c6;
+}
+#punitaqui:hover{
+     fill :#64b8c6;
+}
