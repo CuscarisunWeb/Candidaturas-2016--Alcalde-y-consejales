@@ -26,7 +26,7 @@
            </div>
        </div>
         	 	
-	    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	    <svg version="1.1" id="Mapa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="283.465px" height="566.93px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
 		 xml:space="preserve">
 	        <image display="none" overflow="visible" width="341" height="590" xlink:href="Region4.png"  transform="matrix(0.9775 0 0 0.9775 -267.0527 -569.5352)">
