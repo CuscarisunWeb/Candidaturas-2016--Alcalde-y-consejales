@@ -1,3 +1,8 @@
+<?php /*if(isset( $_POST['id_com']) and !empty( $_POST['id_com'])){}else{ header("location:".URL."index/index");}*/
+ $conexion = new Conexion();
+          /*$id_com = $_POST['id_com']; */
+          $id_com = 8;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,35 +16,51 @@
     <table class="table table-hover">
       <tbody>
 <!-- huincha UNO -->
+         <?php
+         
+          $consulta = "SELECT * FROM alcaldes WHERE id_comuna = ".$id_com."";
+          $conexion->consulta($consulta);                      
+          while($fila = $conexion->extraer_registro())
+          {
+              $nombre = utf8_encode($fila['nom_alcalde']);
+              $profesion = utf8_encode($fila['profesion']);
+              $civil = utf8_encode($fila['estadocivil']);
+              $lista = utf8_encode($fila['lista']);
+              $coalicion = utf8_encode($fila['coalicion']);
+              $partido = utf8_encode($fila['partidopol']);              
+              $entrevista = utf8_encode($fila['entrevista_link']);              
+              $facebook = utf8_encode($fila['facebook_link']);              
+              $web = utf8_encode($fila['website_link']);              
+              $patrimonio = utf8_encode($fila['patrimonio_link']);              
+              $twitter = utf8_encode($fila['twitter_link']);              
+              $imagen = $fila['foto_link'];
+              $id = $fila['id_alcaldes'];
+          
+          ?>
           <tr>
             <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30011.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
+             <img src="<?php echo URL?>images/alcaldes/<?php echo $imagen?>" class="center-block" width="150" height="150">
             </td>
             <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
+              <h4><?php echo $nombre;?></h4>              
+              <p><strong><?php echo $coalicion;?></strong></p>
+              <p><?php echo $partido;?></p>                
             </td>
             <!-- botones redes sociales -->
             <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
+              <a href="<?php echo $entrvista;?>"  target="_blank"class="btn btn-primary btn-sm">Entrevista</a>
+              <a href="<?php echo $facebook;?>"  target="_blank"class="btn btn-primary btn-sm">f</a>
+              <a href="<?php echo $twitter;?>" target="_blank"class="btn btn-primary btn-sm">t</a>
+              <a href="<?php echo $web;?>" target="_blank"class="btn btn-primary btn-sm">w</a>
+              <a href="<?php echo $patrimonio;?>" target="_blank"class="btn btn-primary btn-sm">$</a>
             </td>
             <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
+              <td style="vertical-align:middle;"><h4><?php echo $lista;?></h4></td>
             <!-- Flechas -->
               <td style="vertical-align:middle;">
                   <a  role="button" 
                       data-toggle="collapse" 
-                      href="#col01" 
+                      href="#col<?php echo $id;?>" 
                       aria-expanded="false" 
                       aria-controls="collapseExample">
                     <svg version="1.1" 
@@ -65,13 +86,13 @@
               </td>
           </tr>
 <!-- Collapse col01 -->
-        <tr class="collapse" id="col01">
+        <tr class="collapse" id="col<?php echo $id;?>">
           <td colspan="5" style="padding-left: 2em;">
             <section class="info-collapse">
               <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
+              <b>Profesión/actividad:</b> <?php echo $profesion;?><br>
               <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
+              <b>Estado civil:</b> <?php echo $civil;?><br>
             </div>
             <div class="noticia">
               <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
@@ -79,427 +100,8 @@
             </div>
             </section>
           </td>
-        </tr>        
-<!-- huincha DOS -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30012.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col02" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col02 -->
-        <tr class="collapse" id="col02">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
-<!-- huincha TRES -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30013.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col03" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col03 -->
-        <tr class="collapse" id="col03">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
-<!-- huincha CUATRO -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30014.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col04" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col04 -->
-        <tr class="collapse" id="col04">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
-<!-- huincha CINCO -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30015.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col05" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col05 -->
-        <tr class="collapse" id="col05">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
-<!-- huincha SEIS -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30016.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col06" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col06 -->
-        <tr class="collapse" id="col06">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
-<!-- huincha SIETE -->
-          <tr>
-            <td style="width:10%;">
-                <img  src="<?php echo URL?>images/alcaldes/30017.jpg" 
-                      alt="" 
-                      class="center-block" 
-                      width="150" 
-                      height="150">
-            </td>
-            <td style="vertical-align:middle;">
-              <h4>Nombre1 Nombre2</h4>
-              <h4>Apellido1 Apellido2</h4>
-              <p><strong>Nueva Mayoria</strong></p>
-              <p>Democracia Cristiana (DC)</p>                
-            </td>
-            <!-- botones redes sociales -->
-            <td style="vertical-align:middle; text-align: center;">
-              <button class="btn btn-primary btn-sm">Entrevista</button>
-              <button class="btn btn-primary btn-sm">f</button>
-              <button class="btn btn-primary btn-sm">t</button>
-              <button class="btn btn-primary btn-sm">w</button>
-              <button class="btn btn-primary btn-sm">$</button>
-            </td>
-            <!-- Listas -->
-              <td style="vertical-align:middle;"><h4>Lista 0-26</h4></td>
-            <!-- Flechas -->
-              <td style="vertical-align:middle;">
-                  <a  role="button" 
-                      data-toggle="collapse" 
-                      href="#col07" 
-                      aria-expanded="false" 
-                      aria-controls="collapseExample">
-                    <svg version="1.1" 
-                      class="flecha" 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      xmlns:xlink="http://www.w3.org/1999/xlink" 
-                      x="0px" y="0px"
-                      width="50.333px" 
-                      height="50.25px" 
-                      viewBox="0 0 688.333 516.25" 
-                      enable-background="new 0 0 688.333 516.25"
-                      xml:space="preserve">
-                      <polyline 
-                      opacity="0.7" 
-                      fill="none" 
-                      stroke="#000000" 
-                      stroke-width="100" 
-                      stroke-miterlimit="10" 
-                      points="39.081,120.5 
-                        334.221,415.641 649.253,100.609 "/>
-                    </svg>
-                  </a>
-              </td>
-          </tr>
-<!-- Collapse col07 -->
-        <tr class="collapse" id="col07">
-          <td colspan="5" style="padding-left: 2em;">
-            <section class="info-collapse">
-              <div class="info-pro">    
-              <b>Profesión/actividad:</b> Técnico Agrícola<br>
-              <b>Edad:</b> 65 años<br>
-              <b>Estado civil:</b> Casado(a)<br>
-            </div>
-            <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
-            </div>
-            </section>
-          </td>
-        </tr>        
+        </tr> 
+        <?php  };?>       
       </tbody>
     </table>
 
@@ -508,86 +110,39 @@
     <h2 class="bg-primary" style="padding:1% 0 1% 1%; margin-bottom:-1px;">Concejales</h2>
     <table class="table table-hover">
     <tbody>
+      <?php                   
+         
+          $consulta = "SELECT * FROM concejales WHERE id_comuna = ".$id_com."";         
+          $conexion->consulta($consulta);                                
+          while($fila = $conexion->extraer_registro())
+          {
+              $nom = utf8_encode($fila['nom_concejal']);        
+             /* $lista_2 = utf8_encode($fila['lista']);
+              $coalicion_2 = utf8_encode($fila['coalicion']);
+              $partido_2 = utf8_encode($fila['partidopol']);         
+              $entrevista_2 = utf8_encode($fila['entrevista_link']);  
+              $facebook_2 = utf8_encode($fila['facebook_link']);  
+              $patrimonio_2 = utf8_encode($fila['patrimonio_link']);
+              $twitter_2 = utf8_encode($fila['twitter_link']);         */                                           
+          ?>          
        <tr>
            <td style="vertical-align:middle; text-align:center;">
-               <h4>Lista 0-26</h4>
+               <h4><?php /*echo $lista_2;*/?></h4>
            </td>
            <td style="vertical-align:middle;">
-               <h4>Nombre1 Nombre2 Apellido1 Apellido2</h4>
-               <p><strong>Nueva Mayoria</strong></p> 
-               <p>Democracia Cristiana (DC)</p>
+               <h4><?php echo $nom;?></h4>
+               <p><strong><?php /*echo $coalicion_2;*/?></strong></p> 
+               <p><?php /*echo $partido_2;*/?></p>
            </td>
            <td style="vertical-align:middle; text-align:center;">
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Patrimonio</button>               
-           </td>
-       </tr>    
-        <tr>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Lista 0-26</h4>
-           </td>
-           <td style="vertical-align:middle;">
-               <h4>Nombre1 Nombre2 Apellido1 Apellido2</h4>
-               <p><strong>Nueva Mayoria</strong></p> 
-               <p>Democracia Cristiana (DC)</p>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Coquimbo</h4>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Patrimonio</button>             
+               <a href="<?php /*echo $patrimonio_2;*/?>" target="_blank"
+                class="btn btn-primary btn-sm">Patrimonio</a>               
            </td>
        </tr> 
-        <tr>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Lista 0-26</h4>
-           </td>
-           <td style="vertical-align:middle;">
-               <h4>Nombre1 Nombre2 Apellido1 Apellido2</h4>
-               <p><strong>Nueva Mayoria</strong></p> 
-               <p>Democracia Cristiana (DC)</p>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Coquimbo</h4>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Patrimonio</button>               
-           </td>
-       </tr> 
-        <tr>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Lista 0-26</h4>
-           </td>
-           <td style="vertical-align:middle;">
-               <h4>Nombre1 Nombre2 Apellido1 Apellido2</h4>
-               <p><strong>Nueva Mayoria</strong></p> 
-               <p>Democracia Cristiana (DC)</p>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Coquimbo</h4>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Patrimonio</button>           
-           </td>
-       </tr> 
-        <tr>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Lista 0-26</h4>
-           </td>
-           <td style="vertical-align:middle;">
-               <h4>Nombre1 Nombre2 Apellido1 Apellido2</h4>
-               <p><strong>Nueva Mayoria</strong></p> 
-               <p>Democracia Cristiana (DC)</p>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <h4>Coquimbo</h4>
-           </td>
-           <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Patrimonio</button>               
-           </td>
-       </tr>         
+       <?php }; ?>              
     </tbody>
     </table>
 <script>
