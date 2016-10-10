@@ -28,7 +28,7 @@
 	<div class="container-fluid expanded-panel">
 		<div class="row">
 			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="<?php echo URL?>index/admin">Candidaturas 2016</a>
+				<a href="<?php echo URL?>index/admin">Candidaturas</a>
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">					
@@ -36,8 +36,7 @@
 						<ul class="nav navbar-nav pull-right panel-menu">							
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle account" data-toggle="dropdown">
-									<div class="avatar">										
-									</div>
+									
 									<i class="fa fa-angle-down pull-right"></i>
 									<div class="user-mini pull-right">
 										<span class="welcome">Bienvenido,</span>
@@ -67,7 +66,7 @@
 		<div id="sidebar-left" class="col-xs-2 col-sm-2">
 			<ul class="nav main-menu">
 				<li>
-					<a href="<?php echo URL?>index/admin" class="">
+					<a href="<?php echo URL?>index/admin" >
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">Votos</span>
 					</a>
