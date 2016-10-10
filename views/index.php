@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Candidaturas</title>
-    <link rel="stylesheet" href="<?php echo URL?>public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo URL?>public/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo URL?>public/css/animate.css">
     <link rel="stylesheet" href="<?php echo URL?>public/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 </head>
@@ -18,7 +19,7 @@
        </div>
 
     <!-- Tabla Mapa -->	
-	    <svg version="1.1" id="Mapa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	    <svg version="1.1" id="Mapa" class="pulse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="250px" height="550px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
 		 xml:space="preserve">
 	        <image display="none" overflow="visible" xlink:href="Region4.png"  transform="matrix(0.9775 0 0 0.9775 -267.0527 -569.5352)">
@@ -263,7 +264,7 @@
 			<path id="Comuna" class="select"  fill="#0071BC" d="M43.976,137.049c0,0,0.273,0.953,0,1.768c-0.271,0.816-0.942,1.633,0.548,1.633c1.489,0,2.44,0,2.44,0
 		 		s0.952-0.544,1.089-1.705c0.137-1.15,0.137-1.15,0.137-1.15l-1.225-0.543l-1.281-0.817L43.976,137.049z"/>
 		    </g>
-	</g>
+		</g>
 	    </svg>
 		
 	 </div>
@@ -272,7 +273,7 @@
      <div class="col-sm-6" 
      style="padding:2%; text-align: center;">  
          <div id="nombre-columna" style="border-radius: 3px;">
-            <p style="text-align: center; padding-top: 10px";>SELECIONE UNA COMUNA</p>
+            <p style="text-align: center; padding-top: 10px";>POBLACIÓN</p>
          </div>
           <div class="form-group" style="display: inline-block;">
              <p class="col-sm-6" style="vertical-align: center; padding-top: 5px" >Cantidad Habitantes</p>
@@ -301,52 +302,195 @@
 	 <div class="col-sm-12" id="carga"></div></div>
 
 </div>
-<script src="<?php echo URL?>public/js/jquery-1.11.1.js"></script> 
-<script src="<?php echo URL?>public/js/bootstrap.min.js"></script> 
-<script type="text/javascript">
-  $('.collapse').collapse();
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-});
-  $('#serena').tooltip('show');
-  $("#laSerena").hover(function(){$("#comuna").html('LA SERENA');});	  
-  $("#paihuano").hover(function(){$("#comuna").html('PAIHUANO');});	
-  $("#rioHurtado").hover(function(){$("#comuna").html('RÍO HURTADO');});	
-  $("#laHiguera").hover(function(){$("#comuna").html('LA HIGUERA');});	
-  $("#andacollo").hover(function(){$("#comuna").html('ANDACOLLO');});	
-  $("#vicuna").hover(function(){$("#comuna").html('VICUÑA');});	
-  $("#coquimbo").hover(function(){$("#comuna").html('COQUIMBO');});	
-  $("#ovalle").hover(function(){$("#comuna").html('OVALLE');});	
-  $("#montePatria").hover(function(){$("#comuna").html('MONTE PATRIA');});	
-  $("#salamanca").hover(function(){$("#comuna").html('SALAMANCA');});	
-  $("#illapel").hover(function(){$("#comuna").html('ILLAPEL');});	
-  $("#losVilos").hover(function(){$("#comuna").html('LOS VILOS');});	
-  $("#combarbala").hover(function(){$("#comuna").html('COMBARBALÁ');});	
-  $("#canela").hover(function(){$("#comuna").html('CANELA');});	
-  $("#punitaqui").hover(function(){$("#comuna").html('PUNITAQUI');});	
-  
-  $("#laSerena").click(function()
-  {
-      /*alert('serena');*/
-      $.ajax({
-          url:"<?php echo URL?>index/serena",
-          success : function(data){
-              $("#carga").html(data);
-          }
-      });
-  });	  
 
-  $("#paihuano").click(function()
-  {
-      /*alert('serena');*/
-      $.ajax({
-          url:"<?php echo URL?>index/paihuano",
-          success : function(data){
-              $("#carga").html(data);
-          }
-      });
-  });
-    
-</script>
+<!-- Tabla de archivos -->
+	<script src="<?php echo URL?>public/js/jquery-1.11.1.js"></script> 
+	<script src="<?php echo URL?>public/js/bootstrap.min.js"></script> 
+	<script type="text/javascript">
+	  $('.collapse').collapse();
+	    $(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	});
+	  $('#serena').tooltip('show');
+	  $("#laSerena").hover(function(){$("#comuna").html('LA SERENA');});	  
+	  $("#paihuano").hover(function(){$("#comuna").html('PAIHUANO');});	
+	  $("#rioHurtado").hover(function(){$("#comuna").html('RÍO HURTADO');});	
+	  $("#laHiguera").hover(function(){$("#comuna").html('LA HIGUERA');});	
+	  $("#andacollo").hover(function(){$("#comuna").html('ANDACOLLO');});	
+	  $("#vicuna").hover(function(){$("#comuna").html('VICUÑA');});	
+	  $("#coquimbo").hover(function(){$("#comuna").html('COQUIMBO');});	
+	  $("#ovalle").hover(function(){$("#comuna").html('OVALLE');});	
+	  $("#montePatria").hover(function(){$("#comuna").html('MONTE PATRIA');});	
+	  $("#salamanca").hover(function(){$("#comuna").html('SALAMANCA');});	
+	  $("#illapel").hover(function(){$("#comuna").html('ILLAPEL');});	
+	  $("#losVilos").hover(function(){$("#comuna").html('LOS VILOS');});	
+	  $("#combarbala").hover(function(){$("#comuna").html('COMBARBALÁ');});	
+	  $("#canela").hover(function(){$("#comuna").html('CANELA');});	
+	  $("#punitaqui").hover(function(){$("#comuna").html('PUNITAQUI');});	
+	  
+		  $("#laSerena").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/serena",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });	  
+
+		  $("#paihuano").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/paihuano",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#riohurtado").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/riohurtado",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#lahiguera").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/lahiguera",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#andacollo").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/andacollo",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#vicuna").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/vicuna",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#coquimbo").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/coquimbo",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#ovalle").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/ovalle",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+		  $("#montepatria").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/montepatria",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#salamanca").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/salamanca",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#illapel").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/illapel",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#losvilos").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/losvilos",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#combarbala").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/combarbala",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+
+		  $("#canela").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/canela",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+		  $("#punitaqui").click(function()
+		  {
+		      /*alert('serena');*/
+		      $.ajax({
+		          url:"<?php echo URL?>index/punitaqui",
+		          success : function(data){
+		              $("#carga").html(data);
+		          }
+		      });
+		  });
+	    
+	</script>
 </body>
 </html>

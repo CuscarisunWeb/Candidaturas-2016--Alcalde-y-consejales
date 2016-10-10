@@ -1,8 +1,18 @@
+#facebook, #twitter, #website{
+    cursor: pointer;
+    height: 50px;
+    fill: #fff;
+}
+
+.btn-sm {
+    margin-top: 1px;
+}
+
 .cvertical{
             vertical-align:middle;
         }
 
-#nombre-columna{
+#nombre-columna {
     background-color:#666666; 
     min-height:50px; 
     margin-bottom: 1em;
@@ -16,9 +26,10 @@
             background-color: #666;
             color:white;
             margin-top: 10%;
-            width: auto;
+            width: 100%;
             border-radius: 2px;
             padding: 5px;
+            font-size:16pt; 
             
 }
 
@@ -78,6 +89,7 @@ section.info-collapse  {
     transition: 
     fill 0.5s ease-out;
 }
+
 #paihuano:hover{
     fill :#64b8c6;
         -webkit-transition: 

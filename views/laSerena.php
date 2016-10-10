@@ -26,7 +26,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -96,7 +96,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -166,7 +166,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -236,7 +236,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -306,7 +306,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -376,7 +376,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -446,7 +446,7 @@
               <p>Democracia Cristiana (DC)</p>                
             </td>
             <!-- botones redes sociales -->
-            <td style="vertical-align:middle;">
+            <td style="vertical-align:middle; text-align: center;">
               <button class="btn btn-primary btn-sm">Entrevista</button>
               <button class="btn btn-primary btn-sm">f</button>
               <button class="btn btn-primary btn-sm">t</button>
@@ -521,12 +521,7 @@
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button>
-               
+               <button class="btn btn-primary btn-sm">Patrimonio</button>               
            </td>
        </tr>    
         <tr>
@@ -542,12 +537,7 @@
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button>
-               
+               <button class="btn btn-primary btn-sm">Patrimonio</button>             
            </td>
        </tr> 
         <tr>
@@ -563,12 +553,7 @@
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button>
-               
+               <button class="btn btn-primary btn-sm">Patrimonio</button>               
            </td>
        </tr> 
         <tr>
@@ -584,12 +569,7 @@
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button>
-               
+               <button class="btn btn-primary btn-sm">Patrimonio</button>           
            </td>
        </tr> 
         <tr>
@@ -605,12 +585,7 @@
                <h4>Coquimbo</h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <button class="btn btn-primary btn-sm">Entrevista</button>
-               <button class="btn btn-primary btn-sm">f</button>
-               <button class="btn btn-primary btn-sm">t</button>
-               <button class="btn btn-primary btn-sm">w</button>
-               <button class="btn btn-primary btn-sm">$</button>
-               
+               <button class="btn btn-primary btn-sm">Patrimonio</button>               
            </td>
        </tr>         
     </tbody>

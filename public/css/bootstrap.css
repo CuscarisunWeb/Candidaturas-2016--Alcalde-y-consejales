@@ -3469,9 +3469,9 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .15s linear;
-       -o-transition: opacity .15s linear;
-          transition: opacity .15s linear;
+  -webkit-transition: opacity 1.15s linear;
+       -o-transition: opacity 1.15s linear;
+          transition: opacity 1.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -3492,12 +3492,12 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition-timing-function: ease;
-       -o-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-       -o-transition-duration: .35s;
-          transition-duration: .35s;
+  -webkit-transition-timing-function: 1s ease-in-out 2s;
+       -o-transition-timing-function: 1s ease-in-out 2s;
+          transition-timing-function: 1s ease-in-out 2s;
+  -webkit-transition-duration: 1.35s;
+       -o-transition-duration: 1.35s;
+          transition-duration: 1.35s;
   -webkit-transition-property: height, visibility;
        -o-transition-property: height, visibility;
           transition-property: height, visibility;
