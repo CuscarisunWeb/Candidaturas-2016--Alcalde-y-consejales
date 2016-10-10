@@ -21,7 +21,10 @@
       } 
       function admin()
       {
+          
+          $this->view->render('admin/add/head');
           $this->view->render('admin/index');
+          $this->view->render('admin/add/footer');
       }
       function serena()
       {

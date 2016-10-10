@@ -18,41 +18,23 @@
         function consulta()
         {            
            $val=0;              
-           $sql = "SELECT * FROM cotizador_vendedor WHERE usuario_ven='".$this->nombre."' and clave_ven ='".$this->clave."'";           
+           $sql = "SELECT * FROM user WHERE usuario_user='".$this->nombre."' and pass_user ='".$this->clave."'";           
            $this->base->consulta($sql);                                                       
               while ($fila = $this->base->extraer_registro()) 
               {  
-                session::setValue('id',$fila["id_ven"]);  
-                session::setValue('nombre',$fila["nombre_ven"]); 
-                session::setValue('usuario',$fila["usuario_ven"]); 
-                session::setValue('pass',$fila["clave_ven"]);                  
-                session::setValue('correo',$fila["correo_ven"]);
-                session::setValue('perfil',$fila["perfil_ven"]);                                                                 
-                $this->idi = session::getValue('id'); 
-                $this->perfil = session::getValue('perfil');                   
+                session::setValue('id',$fila["id_user"]);  
+                session::setValue('usuario',$fila["usuario_user"]);                 
+                session::setValue('pass',$fila["pass_user"]);                                          
                 $val = 1;                                            
                             
               }             
               if($val == 1)
               {
-                $this->select(); 
+                 header("location:".URL."index/admin"); 
               }else
               {
                   header("location:".URL."index/login?error=1"); 
               }
-          }
-        function select()
-        {                 
-             switch($this->perfil)
-             {
-                case "0":
-                     header("location:".URL."index/vende");             
-                    break;
-                case "1":
-                     header("location:".URL."index/admin");             
-                    break;                
-            }
-                        
-        }                
+          }                  
     }    
 ?>
