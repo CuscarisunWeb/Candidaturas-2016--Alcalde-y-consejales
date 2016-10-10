@@ -1,3 +1,7 @@
+.cvertical{
+            vertical-align:middle;
+        }
+
 #nombre-columna{
     background-color:#666666; 
     min-height:50px; 
@@ -7,7 +11,8 @@
     font-size:16pt;     
     
 }
-   #comuna{
+
+#comuna {
             background-color: #666;
             color:white;
             margin-top: 10%;
@@ -15,7 +20,42 @@
             border-radius: 2px;
             padding: 5px;
             
-        }
+}
+
+/*! Estilo de Noticias */
+section.info-collapse  {
+
+    display: inline-flex;
+}
+.info-pro{
+    max-width: 300px;
+    min-width: 275px; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.noticia {
+
+    width: auto;
+    height: auto;
+    padding: 1em;
+    padding-left: 2em;
+    
+}
+
+.titulo {
+
+    font-family: 'Oswald';
+    font-size: 16pt;
+}
+
+.bajada {
+
+    font-size: 10pt;
+    justify-content: all;
+}
+
+/*! Transiciones de Mapa */
 #Mapa {
     margin-top: -50px;
     margin-bottom: -50px;
@@ -24,50 +64,199 @@
 .select:hover{
     cursor: pointer;
 }
+
 #laSerena:hover{
     fill :#64b8c6;
+    -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #paihuano:hover{
     fill :#64b8c6;
+        -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #rioHurtado:hover{
     fill :#64b8c6;
+        -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 } 
 #laHiguera:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #andacollo:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #vicuna:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #coquimbo:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #ovalle:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #montePatria:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #salamanca:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #illapel:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #losVilos:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #combarbala:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #canela:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
 #punitaqui:hover{
      fill :#64b8c6;
+         -webkit-transition: 
+    fill 0.5s ease-out;
+    -moz-transition: 
+    fill 0.5s ease-out;
+    -o-transition: 
+    fill 0.5s ease-out;
+    -ms-transition: 
+    fill 0.5s ease-out;
+    transition: 
+    fill 0.5s ease-out;
 }
-
-/*! Transiciones de Mapa */
