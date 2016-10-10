@@ -18,7 +18,11 @@
           # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
            $this->view->render('login');          
            
-      }  
+      } 
+      function admin()
+      {
+          $this->view->render('admin/index');
+      }
       function serena()
       {
           # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
