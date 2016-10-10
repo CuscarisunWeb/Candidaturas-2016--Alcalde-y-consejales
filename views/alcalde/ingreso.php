@@ -10,7 +10,7 @@
 		</a>
 		<ol class="breadcrumb pull-left">
 			
-			<li><a href="#">Votos</a></li>
+			<li><a href="#">Ingreso Alcalde</a></li>
 		</ol>
 		
 	</div>

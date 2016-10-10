@@ -8,8 +8,7 @@
 		<link href="<?php echo URL?>public/plugins/bootstrap/bootstrap.css" rel="stylesheet">
 		<link href="<?php echo URL?>public/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-		<link href="<?php echo URL?>public/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>		
 		<link href="<?php echo URL?>public/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
 		<link href="<?php echo URL?>public/plugins/xcharts/xcharts.min.css" rel="stylesheet">
 		<link href="<?php echo URL?>public/plugins/select2/select2.css" rel="stylesheet">
@@ -29,7 +28,7 @@
 	<div class="container-fluid expanded-panel">
 		<div class="row">
 			<div id="logo" class="col-xs-12 col-sm-2">
-				<a href="index.html">Candidaturas 2016</a>
+				<a href="<?php echo URL?>index/admin">Candidaturas 2016</a>
 			</div>
 			<div id="top-panel" class="col-xs-12 col-sm-10">
 				<div class="row">					
@@ -68,7 +67,7 @@
 		<div id="sidebar-left" class="col-xs-2 col-sm-2">
 			<ul class="nav main-menu">
 				<li>
-					<a href="<?php echo URL?>public/ajax/votos.php" class="ajax-link">
+					<a href="<?php echo URL?>index/admin" class="">
 						<i class="fa fa-dashboard"></i>
 						<span class="hidden-xs">Votos</span>
 					</a>
@@ -79,16 +78,16 @@
 						<span class="hidden-xs">Alcaldes</span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="ajax-link" href="<?php echo URL?>public/ajax/charts_xcharts.html">Ingreso</a></li>
-						<li><a class="ajax-link" href="<?php echo URL?>public/ajax/charts_flot.html">Listado</a></li>						
+						<li><a  href="<?php echo URL?>index/alcalde_ingreso">Ingreso</a></li>
+						<li><a  href="<?php echo URL?>index/alcalde_listado">Listado</a></li>						
 					</ul>
 					<a href="#" class="dropdown-toggle">
 						<i class="fa fa-bar-chart-o"></i>
 						<span class="hidden-xs">Consejales</span>
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="ajax-link" href="<?php echo URL?>public/ajax/charts_xcharts.html">Ingreso</a></li>
-						<li><a class="ajax-link" href="<?php echo URL?>public/ajax/charts_flot.html">Listado</a></li>						
+						<li><a  href="<?php echo URL?>index/concejal_ingreso">Ingreso</a></li>
+						<li><a  href="<?php echo URL?>index/concejal_listado">Listado</a></li>						
 					</ul>
 				</li>				
 			</ul>

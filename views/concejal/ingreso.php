@@ -10,7 +10,7 @@
 		</a>
 		<ol class="breadcrumb pull-left">
 			
-			<li><a href="#">Votos</a></li>
+			<li><a href="#">Ingreso Consejales</a></li>
 		</ol>
 		
 	</div>
