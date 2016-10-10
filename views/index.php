@@ -16,7 +16,8 @@
                <div id="comuna">Comunas</div>
            </div>
        </div>
-        	 	
+
+    <!-- Tabla Mapa -->	
 	    <svg version="1.1" id="Mapa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 width="250px" height="550px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
 		 xml:space="preserve">
@@ -266,35 +267,39 @@
 	    </svg>
 		
 	 </div>
+
+	<!-- Tabla Poblacion -->
      <div class="col-sm-6" 
      style="padding:2%; text-align: center;">  
          <div id="nombre-columna" style="border-radius: 3px;">
             <p style="text-align: center; padding-top: 10px";>SELECIONE UNA COMUNA</p>
          </div>
           <div class="form-group" style="display: inline-block;">
-             <p class="col-sm-6" style="vertical-align: center;" >Cantidad Habitantes</p>
+             <p class="col-sm-6" style="vertical-align: center; padding-top: 5px" >Cantidad Habitantes</p>
              <div class="col-sm-6">
-             <p style=" font-size:20pt; font-family: 'Oswald', sans-serif;">298,976</p>
+             <p style=" font-size:25pt; font-family: 'Oswald', sans-serif;">298,976</p>
              </div>
           </div> 
-         <div class="form-group" style="display: inline-block; text-align: center;">
-             <p class="col-sm-6" style="padding-top: 8px;">Provincia</p>
+         <div class="form-group" style="display: inline-block; text-align: center; margin-top: -10px;">
+             <p class="col-sm-6" style="padding-top: 15px;">Provincia</p>
              <div class="col-sm-6">
-             <p style="font-size:20pt; font-family: 'Oswald', sans-serif;">Elqui</p>
+             <p style="font-size:25pt; font-family: 'Oswald', sans-serif;">Elqui</p>
              </div>
           </div> 
           <div class="form-group" style="display: inline-block;">
-             <p class="col-sm-6" style="padding-top: 8px;">Distrito</p>
+             <p class="col-sm-6" style="padding-top: 12px;">Distrito</p>
              <div class="col-sm-6">
-             <p style="font-size:20pt; font-family: 'Oswald', sans-serif;">N°9</p>
+             <p style="font-size:25pt; font-family: 'Oswald', sans-serif;">N°9</p>
              </div>
           </div>  
           <img style="vertical-align:center;" class="img-responsive center-block" src="images/EE.png" width="190">	
      </div>         
-	  </div>  
+	  </div>
+
+	  <!-- Tabla de Alcaldes y Concejales -->
 	 <div class="row">
-	     <div class="col-sm-12" id="carga"></div>
-	 </div>	    
+	 <div class="col-sm-12" id="carga"></div></div>
+
 </div>
 <script src="<?php echo URL?>public/js/jquery-1.11.1.js"></script> 
 <script src="<?php echo URL?>public/js/bootstrap.min.js"></script> 
