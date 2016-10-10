@@ -54,18 +54,13 @@
           $this->view->render('concejal/listado');
           $this->view->render('admin/add/footer');
       } 
-      function serena()
+      function procesos()
       {
           # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
-           $this->view->render('laSerena');          
+           $this->view->render('procesos');          
            
       } 
-      function paihuano()
-      {
-          # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
-           $this->view->render('paihuano');          
-           
-      } 
+      
             
   }
 ?>

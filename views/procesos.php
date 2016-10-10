@@ -1,7 +1,7 @@
-<?php /*if(isset( $_POST['id_com']) and !empty( $_POST['id_com'])){}else{ header("location:".URL."index/index");}*/
+<?php if(isset( $_POST['id_com']) and !empty( $_POST['id_com'])){}else{ header("location:".URL."index/index");}
  $conexion = new Conexion();
-          /*$id_com = $_POST['id_com']; */
-          $id_com = 8;
+          $id_com = $_POST['id_com']; 
+         /* $id_com = 8;*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -110,35 +110,42 @@
     <h2 class="bg-primary" style="padding:1% 0 1% 1%; margin-bottom:-1px;">Concejales</h2>
     <table class="table table-hover">
     <tbody>
-      <?php                   
-         
-          $consulta = "SELECT * FROM concejales WHERE id_comuna = ".$id_com."";         
-          $conexion->consulta($consulta);                                
+      <?php 
+          $consulta = "SELECT * FROM comunas WHERE id_comuna = ".$id_com."";         
+          $conexion->consulta($consulta);                      
           while($fila = $conexion->extraer_registro())
           {
-              $nom = utf8_encode($fila['nom_concejal']);        
-             /* $lista_2 = utf8_encode($fila['lista']);
+              $comuna = utf8_encode($fila['nom_comuna']);                                                              
+          }
+        
+        
+        
+         
+          $consulta = "SELECT * FROM concejales WHERE id_comuna = ".$id_com."";         
+          $conexion->consulta($consulta);                      
+          while($fila = $conexion->extraer_registro())
+          {
+              $nombre_2 = utf8_encode($fila['nom_concejal']);        
+              $lista_2 = utf8_encode($fila['lista']);
               $coalicion_2 = utf8_encode($fila['coalicion']);
-              $partido_2 = utf8_encode($fila['partidopol']);         
-              $entrevista_2 = utf8_encode($fila['entrevista_link']);  
-              $facebook_2 = utf8_encode($fila['facebook_link']);  
-              $patrimonio_2 = utf8_encode($fila['patrimonio_link']);
-              $twitter_2 = utf8_encode($fila['twitter_link']);         */                                           
-          ?>          
+              $partido_2 = utf8_encode($fila['partidopol']);                                  
+              $patrimonio_2 = utf8_encode($fila['patrimonio_link']);                                              
+          
+          ?>
        <tr>
            <td style="vertical-align:middle; text-align:center;">
-               <h4><?php /*echo $lista_2;*/?></h4>
+               <h4><?php echo $lista_2;?></h4>
            </td>
            <td style="vertical-align:middle;">
-               <h4><?php echo $nom;?></h4>
-               <p><strong><?php /*echo $coalicion_2;*/?></strong></p> 
-               <p><?php /*echo $partido_2;*/?></p>
+               <h4><?php echo $nombre_2;?></h4>
+               <p><strong><?php echo $coalicion_2;?></strong></p> 
+               <p><?php echo $partido_2;?></p>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <h4>Coquimbo</h4>
+               <h4><?php echo $comuna;?></h4>
            </td>
            <td style="vertical-align:middle; text-align:center;">
-               <a href="<?php /*echo $patrimonio_2;*/?>" target="_blank"
+               <a href="<?php echo $patrimonio_2;?>" target="_blank"
                 class="btn btn-primary btn-sm">Patrimonio</a>               
            </td>
        </tr> 

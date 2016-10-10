@@ -26,7 +26,7 @@
 	        </image>
 	        <g>
 		
-			<a id="serena" data-toggle="tooltip" data-placement="top" title="La Serena"><path id="laSerena" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="8" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M82.969,189.635c4.071,4.075,8.969,2.443,11.412,5.703c1.63,3.26,1.63,8.157,1.63,12.228c0.815,4.074,5.707,5.708,9.781,5.708
 			c0-2.447,2.447-3.263,3.264-4.891c4.076-10.6,1.634-24.459,7.34-33.423c3.259-4.891,9.782-7.337,13.045-15.491
 			c3.231-8.086,13.685-7.351,21.02-10.523c-2.426-1.418-4.456-3.558-5.534-8.228c0-0.815-3.261,2.446-4.892,2.446
@@ -34,9 +34,9 @@
 			c-6.524,6.517-11.414,13.043-17.934,3.257c-1.631,4.894-5.706,7.338-11.413,8.157c-4.893,0.813-9.784,7.336-15.488,7.336
 			c0.812,1.63-1.632,2.442-0.817,4.074c-2.118-2.82-4.232-3.196-6.876-2.194c-0.049,1.495-0.049,3.821-0.049,3.821
 			s-0.818,3.125-1.086,3.53c-0.273,0.408-1.225,3.399-1.225,3.399l3.126,3.259v2.58l2.173,1.496l2.176,3.4l1.357,2.581l-0.546,10.055
-			l-2.309,1.631l-2.153,1.436C77.547,187.243,82.176,188.051,82.969,189.635z"/></a>
+			l-2.309,1.631l-2.153,1.436C77.547,187.243,82.176,188.051,82.969,189.635z"/>
 		
-			<path id="paihuano" class="select" fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="9" class="select" fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M216.255,245.752l-0.496-4.75c-5.154-4.705-8.279-10.1-12.136-15.496c-4.89-6.522-4.89-13.043-8.968-18.747
 			c-3.261-4.077-0.816-6.525,2.445-9.786c-5.706-0.817-6.522-3.259-6.522-8.966c-2.444,3.257-8.152-0.82-10.598,3.257
 			c0-1.629,0-2.444-0.816-3.257c-0.811-0.82-2.443,0-3.261,0.813c0,1.63-1.626,2.444-0.813,4.07
@@ -45,7 +45,7 @@
 			c0,0,0.814-1.627,0.814-2.443c5.705-4.075,7.338,3.26,9.781,6.521c2.881,5.757,7.663,3.258,12.11,3.152l0.8-1.118l5.03-3.798
 			l1.355-4.215L216.255,245.752z"/>
 		
-			<path id="rioHurtado" class="select" fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="15" class="select" fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M151.446,223.059c0,1.629-1.63,2.447-1.63,3.262c-3.26,2.446-8.156-2.445-13.041,0.816c-4.076,2.447-10.599-2.45-15.491-0.816
 			c-2.447,0.816,4.893,5.707,2.449,8.97c-4.079,3.261-8.158-2.442-9.787-1.632c-5.707,2.445-8.155,8.972-10.597,14.679
 			c0,0.812,1.631,0.812,2.441,1.627c2.447,6.521-2.441,13.045,4.078,17.933c5.706,3.262,11.411-0.812,16.307-4.071
@@ -73,7 +73,7 @@
 			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M131.064,330.672c-0.258-0.334-0.526-0.628-0.809-0.909C130.278,330.253,130.395,330.672,131.064,330.672z"/>
 		
-			<path id="punitaqui" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="14" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M111.501,303.766c-3.262,0.819-5.709,4.894-8.152,3.265c-1.582-0.794-1.636-3.877-3.121-6.293
 			c-3.577,1.612-7.408,1.543-10.741-1.047c-2.462-1.846-6.78-2.762-7.698-5.208c-1.423,3.095-6.184,3.75-9.42,4.396
 			c0.817,1.627-0.817,2.444-1.633,3.258c-3.256,1.629-0.813-3.258-2.445-3.258c0.814,6.518-0.813,13.045,1.632,18.749
@@ -84,7 +84,7 @@
 			c-0.813-2.445-3.258-4.889-2.443-6.519c1.63-0.814,4.89-0.814,6.52-2.444c0.816-1.631,0-4.076,0.816-5.706
 			c4.073-3.26,8.153-6.522,13.856-7.337c0,1.631-0.814,3.259,1.633,4.075C110.688,314.364,112.315,309.474,111.501,303.766z"/>
 		
-			<path id="canela" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="1" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M59.326,426.868c4.074-3.263,4.074,8.967,8.965,3.259c0.817,3.257,2.446,6.521,2.446,10.597c1.632-3.258,6.521-2.44,7.338-4.073
 			c4.076-7.339-4.888-8.97-8.967-14.677c-0.817-1.626-0.817-5.705,0-5.705c5.706-2.439,12.229,0.816,18.749-0.813
 			c-3.26-2.443,0-4.893,0-8.152c-0.817-4.08-2.443-8.153-7.335-7.336c1.63-3.263,3.26-6.521,6.518-8.159
@@ -96,7 +96,7 @@
 			l-0.683,8.288l2.171,2.171l0.68,1.229l0.546,4.616l1.497,4.488l0.68,3.398l-0.136,1.766l-0.019,0.102
 			C56.885,433.436,57.047,428.383,59.326,426.868z"/>
 		
-			<path id="combarbala" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="11" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M113.13,384.471c0.816-7.336,9.781-13.045,14.675-6.518c1.631,1.632,0.814,6.518,2.444,9.786c0.813,0.814,3.26,2.44,4.895,2.44
 			c6.517-4.073,5.707-14.672,13.04-16.299c1.631-0.818,3.259,4.885,4.077,3.254c4.01-4.009,8.814-5.655,12.073-8.818
 			c-2.366-10.266-4.165-18.133-15.335-20.526c0.815,0,1.632,0,1.632,0c0.812-0.817,0-3.259-0.816-3.259
@@ -112,7 +112,7 @@
 			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M111.843,455.529c0.155-0.034,0.313-0.074,0.471-0.129C112.11,455.402,111.957,455.451,111.843,455.529z"/>
 		
-			<path id="losVilos" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="3" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M119.652,461.107c0,0,0.817,0,1.63,0c-4.074-1.632-5.707-5.703-9.781-4.891c0,0,0-0.455,0.342-0.684
 			c-2.188,0.469-3.711-1.054-5.235-2.576c-3.258-2.444-7.337,2.447-8.964,0.813c-8.158-4.889-12.231-11.415-19.569-17.118
 			c-0.816,1.634-5.706,0.815-7.338,4.075c0-4.075-1.631-7.337-2.445-10.598c-4.892,5.705-4.892-6.522-8.967-3.262
@@ -122,7 +122,7 @@
 			l-0.543,4.073l2.714-0.136l4.351-2.171l9.918,4.892h7.742l5.573-2.312l7.472-7.206l5.027,5.032l9.242-8.291l3.397-3.125l3.804-1.9
 			l-1.226-5.575l4.892,0.956l3.125-0.137l0.34,0.283C122.755,469.932,118.852,465.91,119.652,461.107z"/>
 		
-			<path id="illapel" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="2" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M107.426,447.25c-4.076-4.895-2.446-11.415-0.817-14.674c3.26-9.784,13.044-8.971,22.011-12.231
 			c4.89-1.627,11.412-4.889,16.305-4.076c3.26,0,8.971,1.632,11.413-0.813c2.446-1.627,1.633-7.336,4.073-10.602
 			c1.624-2.426,4.852,0.777,8.096,1.616l0.469-4.61l-1.905-4.35l0.543-3.801l2.313-2.719l-0.951-3.801l1.223-2.178l1.359-3.671
@@ -136,7 +136,7 @@
 			c4.078,5.707,13.045,7.338,8.967,14.681c7.339,5.703,11.413,12.225,19.57,17.115c1.487,1.491,5.027-2.46,8.12-1.267
 			c-0.534-0.485-1.07-1.178-1.602-1.178C105.792,450.509,105.792,448.062,107.426,447.25z"/>
 		
-			<path id="salamanca" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="4" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M209.463,459.747c0,0-5.163-4.624-5.843-5.168s-2.583-3.803-3.938-4.213c-1.361-0.408-3.944,0.953-5.029,0.953
 			c-1.087,0-2.718-0.681-3.942-1.227c-1.226-0.545-7.884-4.072-8.43-4.482c-0.543-0.41-0.541-1.627-0.541-1.627l-1.766-3.81
 			l-0.681-4.615l0.547-2.989l0.542-2.313c0,0-0.273-1.629-0.411-2.039c-0.133-0.404-1.361-2.581-1.361-2.581l-4.071-1.225
@@ -153,7 +153,7 @@
 			c0-0.406,1.495-4.347,1.495-4.347s-2.308-2.714-2.715-2.714s-2.039-4.485-2.039-4.485l-0.544-4.485l2.313-0.813h3.804l4.212-2.448
 			l1.768-4.073l3.943-3.259L209.463,459.747z"/>
 		
-			<path id="montePatria" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="12" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M103.35,307.03c2.442,1.629,4.888-2.445,8.152-3.265c0.814,5.708-0.813,10.601-7.339,10.601c0,3.262,2.446,6.52,3.263,9.785
 			c1.631-1.631,3.265-2.445,4.076-4.075c3.114,9.339,12.906,3.83,18.754,9.692c-0.027-0.698,0.14-1.541-0.815-1.541
 			c0.812-1.628,3.257-0.813,4.07-0.813c4.074,7.335,6.521,16.305,16.306,17.12c0.814,0,1.629,2.44,0.814,3.258c0,0-0.814,0-1.631,0
@@ -171,7 +171,7 @@
 			M117.187,277.458c0.197-0.142,0.279-0.319,0.034-0.578c-0.006,0.008-0.011,0.018-0.016,0.023
 			C117.205,277.095,117.193,277.274,117.187,277.458z"/>
 		
-			<path id="ovalle" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="13" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M44.648,353.496c2.447,4.075,8.155,3.26,12.231,2.445c-0.816,0.814,0.813,1.63,0.813,2.441c7.338-4.071-0.813-9.781-0.813-16.3
 			c0-1.634-3.26,0-4.892-0.816c1.632-4.887,0-7.338-3.258-11.415c2.443-0.814,3.258-3.262,5.707-4.074
 			c-4.895-0.815,0-7.335,0.809-6.521c4.896,1.63,9.786-3.259,14.677-1.628c-2.442-5.704-0.814-12.23-1.632-18.749
@@ -196,7 +196,7 @@
 			M117.205,276.903c0.005-0.011,0.01-0.018,0.016-0.023c-0.006-0.004-0.008-0.01-0.014-0.017
 			C117.207,276.876,117.205,276.888,117.205,276.903z"/>
 		
-			<path id="coquimbo" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="6" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M45.466,250.779c3.264,1.627,7.337,0,10.598,0.815c0,0,0,0.355,0,0.812c0,0.816,0,0.816,0,1.634c0-0.817,0-0.817,0-1.634
 			c-0.817,5.707,1.63,9.785,5.707,13.045c0.815-2.444,3.261-4.071,4.892-5.704c-0.815,1.633,0.817,2.444,1.629,4.078
 			c1.633-3.264,0.816-4.078,4.077-6.524c4.076-2.445,1.628-8.964,8.154-6.521c-3.14-7.841-2.496-12.663,6.263-13.017
@@ -210,7 +210,7 @@
 			c-0.078,0.116-0.191,0.339-0.311,0.595C38.784,242.948,41.801,247.846,45.466,250.779z"/>
 		    <g>
 			
-	        <path id="vicuna" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+	        <path id="10" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 	        M253.489,210.008h-1.907l-6.111-2.851l-5.705,0.95l-2.313-4.889l4.622-7.065l-0.545-4.481l3.127-6.659l-0.818-1.628l1.633-5.03
 	        l1.357-4.217l-2.852-2.582l0.813-4.072l-1.768-2.851l2.717-7.745v-3.126l-2.174-2.715l-5.161-7.336l1.63-9.648l-2.237-3.804
 	        v-6.049l-4.965-0.879l-10.055,4.822L219.516,127l-3.666,1.153l-7.612-2.239l-2.447-5.977l-4.887-7.406l-5.54-5.538l-9.373,0.1
@@ -228,7 +228,7 @@
 	        l1.63-3.259v-2.041L253.489,210.008z"/>
 		    </g>
 		
-			<path id="andacollo" class="select"  fill="#0072B2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+			<path id="5" class="select"  fill="#0072B2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M111.501,218.981c-4.812,0-2.532-5.51-4.783-8.022c-0.527,0.614-0.926,1.336-0.926,2.314c-3.452,0-7.485-1.178-9.131-4.016
 			c-9.613,3.259-9.595,8.145-5.541,17.06c0-0.813,0-1.633,0-2.446c3.263,4.894-3.263,7.338-4.078,12.229
 			c0-0.812-0.812-0.812-0.812-0.812c0,3.26,3.259,5.704,2.445,9.783c4.075-0.816,3.262,2.446,5.707,4.889
@@ -236,7 +236,7 @@
 			c2.284-3.052-3.983-7.528-2.806-8.762c-3.684,0.619-7.373,0.764-11.06,2.239C109.868,225.506,109.054,222.245,111.501,218.981z"/>
 		     <g>
 			
-	        <path id="laHiguera" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+	        <path id="7" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 	        M176.618,100.466l-3.469-6.418l1.733-4.586l-1.427-2.241l-1.935-1.018v-7.85l-3.464-4.993l-2.444-4.785l1.629-4.687l-2.445-2.145
 	        c0,0-1.732,0.818-3.159,0.912c-1.428,0.104-0.918-0.096-2.443-0.61c-1.532-0.506-1.63-1.018-3.366-0.912
 	        c-1.733,0.101-4.688,2.125-4.688,2.125s-1.123-0.395-2.142,0.01c-1.019,0.41-2.345-0.097-2.747,0
@@ -307,189 +307,42 @@
 	<script src="<?php echo URL?>public/js/jquery-1.11.1.js"></script> 
 	<script src="<?php echo URL?>public/js/bootstrap.min.js"></script> 
 	<script type="text/javascript">
-	  $('.collapse').collapse();
-	    $(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
-	});
-	  $('#serena').tooltip('show');
-	  $("#laSerena").hover(function(){$("#comuna").html('LA SERENA');});	  
-	  $("#paihuano").hover(function(){$("#comuna").html('PAIHUANO');});	
-	  $("#rioHurtado").hover(function(){$("#comuna").html('RÍO HURTADO');});	
-	  $("#laHiguera").hover(function(){$("#comuna").html('LA HIGUERA');});	
-	  $("#andacollo").hover(function(){$("#comuna").html('ANDACOLLO');});	
-	  $("#vicuna").hover(function(){$("#comuna").html('VICUÑA');});	
-	  $("#coquimbo").hover(function(){$("#comuna").html('COQUIMBO');});	
-	  $("#ovalle").hover(function(){$("#comuna").html('OVALLE');});	
-	  $("#montePatria").hover(function(){$("#comuna").html('MONTE PATRIA');});	
-	  $("#salamanca").hover(function(){$("#comuna").html('SALAMANCA');});	
-	  $("#illapel").hover(function(){$("#comuna").html('ILLAPEL');});	
-	  $("#losVilos").hover(function(){$("#comuna").html('LOS VILOS');});	
-	  $("#combarbala").hover(function(){$("#comuna").html('COMBARBALÁ');});	
-	  $("#canela").hover(function(){$("#comuna").html('CANELA');});	
-	  $("#punitaqui").hover(function(){$("#comuna").html('PUNITAQUI');});	
+	  $('.collapse').collapse();	   
+	  $("#8").hover(function(){$("#comuna").html('LA SERENA');});	  
+	  $("#9").hover(function(){$("#comuna").html('PAIHUANO');});	
+	  $("#15").hover(function(){$("#comuna").html('RÍO HURTADO');});	
+	  $("#7").hover(function(){$("#comuna").html('LA HIGUERA');});	
+	  $("#5").hover(function(){$("#comuna").html('ANDACOLLO');});	
+	  $("#10").hover(function(){$("#comuna").html('VICUÑA');});	
+	  $("#6").hover(function(){$("#comuna").html('COQUIMBO');});	
+	  $("#13").hover(function(){$("#comuna").html('OVALLE');});	
+	  $("#12").hover(function(){$("#comuna").html('MONTE PATRIA');});	
+	  $("#4").hover(function(){$("#comuna").html('SALAMANCA');});	
+	  $("#2").hover(function(){$("#comuna").html('ILLAPEL');});	
+	  $("#3").hover(function(){$("#comuna").html('LOS VILOS');});	
+	  $("#11").hover(function(){$("#comuna").html('COMBARBALÁ');});	
+	  $("#1").hover(function(){$("#comuna").html('CANELA');});	
+	  $("#14").hover(function(){$("#comuna").html('PUNITAQUI');});	
 	  
-		  $("#laSerena").click(function()
+		  $("path").click(function()
 		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/serena",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });	  
-
-		  $("#paihuano").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/paihuano",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#riohurtado").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/riohurtado",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#lahiguera").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/lahiguera",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#andacollo").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/andacollo",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#vicuna").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/vicuna",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#coquimbo").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/coquimbo",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#ovalle").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/ovalle",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-		  $("#montepatria").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/montepatria",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#salamanca").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/salamanca",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#illapel").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/illapel",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#losvilos").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/losvilos",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#combarbala").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/combarbala",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-
-		  $("#canela").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/canela",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
-		  $("#punitaqui").click(function()
-		  {
-		      /*alert('serena');*/
-		      $.ajax({
-		          url:"<?php echo URL?>index/punitaqui",
-		          success : function(data){
-		              $("#carga").html(data);
-		          }
-		      });
-		  });
+		     var valor = $( this ).attr("id");
+             var datos = {
+                 id_com : valor
+             };
+		     $.ajax({
+                 type: 'POST',
+                 url:"<?php echo URL;?>index/procesos",
+                 data: datos,
+                 success: function(data){
+                     $("#carga").html(data);
+                 },
+                 error: function(error){
+                     alert(error);
+                 }
+             });
+              
+		  });	        
 	    
 	</script>
 </body>
