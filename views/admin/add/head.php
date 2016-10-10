@@ -1,3 +1,4 @@
+<?php if(session::getValue('id')){}else{ header("location:".URL."index/index");}?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>

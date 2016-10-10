@@ -1,4 +1,5 @@
 <?php 
+          if(isset( $_POST['id_com']) and !empty( $_POST['id_com'])){}else{ header("location:".URL."index/index");}
           $conexion = new Conexion();
           $id_com = $_POST['id_com']; 
           $consulta = "SELECT * FROM comunas WHERE id_comuna = ".$id_com."";         
