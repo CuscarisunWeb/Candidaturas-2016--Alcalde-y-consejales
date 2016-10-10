@@ -10,6 +10,7 @@
 </head>
 <body>
 <div class="container">
+     
 	 <div class="row">
 	 <div class="col-sm-6" style="text-align:center;">	
        <div class="row">
@@ -325,6 +326,9 @@
 	  
 		  $("path").click(function()
 		  {
+             $("#carga").html("<img class ='gif1' src='<?php echo URL?>public/img/ajax-loader.gif'/>");
+             $("#esta").html("<img class ='gif2' src='<?php echo URL?>public/img/ajax-loader.gif'/>");
+              
 		     var valor = $( this ).attr("id");
              var datos = {
                  id_com : valor
@@ -335,6 +339,7 @@
                  data: datos,
                  success: function(data){
                      $("#carga").html(data);
+                     
                  },
                  error: function(error){
                      alert(error);

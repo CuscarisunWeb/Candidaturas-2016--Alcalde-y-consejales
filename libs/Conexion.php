@@ -1,6 +1,7 @@
 <?php
 class Conexion
 {
+   
 	private $servidor;
 	private $usuario;
 	private $pass;
@@ -27,7 +28,7 @@ class Conexion
 			<script language="JavaScript" type="text/javascript">
 				alert ("Falló conexión al servidor:<?php printf("%s\n", mysqli_connect_error());?>"); 
 			</script>
-			<?
+			<?php
 			exit();
 		}
 	}
@@ -51,7 +52,7 @@ class Conexion
 			<script language="JavaScript" type="text/javascript">
 				alert ("Error: <?php //printf("%s\n", mysqli_error($this->descriptor));?>"); 
 			</script>
-			<?
+			<?php
 		}
 	}
 	// -------EXTRAE LOS REGISTROS DE UNA TABLA
@@ -85,7 +86,7 @@ class Conexion
 			<script language="JavaScript" type="text/javascript">
 				//alert ("Error: <?php //printf("%s\n", mysqli_error($this->descriptor));?>"); 
 			</script>
-			<?
+			<?php
 		}
 	}
 	//extrae los registros de una consulta
@@ -111,7 +112,7 @@ class Conexion
 			<script language="JavaScript" type="text/javascript">
 				//alert ("Error: <?php //printf("%s\n", mysqli_error($this->descriptor));?>"); 
 			</script>
-			<?
+			<?php
 		}
 	}
 	public function extraer_registro3(){
@@ -126,5 +127,8 @@ class Conexion
 		$cantidad= mysqli_num_rows($this->sql3);
 		return $cantidad;
 	}
-}
+      
+              
+  }
+
 ?>

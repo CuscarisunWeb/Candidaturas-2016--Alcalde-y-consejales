@@ -1,5 +1,11 @@
 <?php if(isset( $_POST['id_com']) and !empty( $_POST['id_com'])){}else{ header("location:".URL."index/index");}
- $conexion = new Conexion();
+if(phpversion() == '5.4.3')
+{
+     $conexion = new Conexion();
+}else{
+     $conexion = new Conexion2();
+}
+        
           $id_com = $_POST['id_com']; 
          /* $id_com = 8;*/
 ?>

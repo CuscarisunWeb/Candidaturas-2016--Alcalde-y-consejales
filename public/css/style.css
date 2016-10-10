@@ -3,6 +3,15 @@
     height: 50px;
     fill: #fff;
 }
+/**** css del gif de carga ***/
+.gif1{
+    text-align: center;
+    padding:20% 10% 20% 10%;
+}
+.gif2{
+    text-align: center;
+    padding:20% 25% 20% 25%;
+}
 
 .btn-sm {
     margin-top: 1px;

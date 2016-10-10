@@ -6,7 +6,12 @@
       function __construct()
       { 
           # en el metodo Conexion se le pasan como parametros las constantes del archivo de configuracion
-          $this->base = new Conexion();
+         if(phpversion() == '5.4.3')
+            {
+                 $this->base = new Conexion();
+            }else{
+                 $this->base = new Conexion2();
+            }
       }            
   } 
 ?>
