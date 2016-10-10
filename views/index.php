@@ -5,16 +5,7 @@
     <title>Candidaturas</title>
     <link rel="stylesheet" href="<?php echo URL?>public/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo URL?>public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">    
-    <style>
-        #comuna{
-            background-color: #666;
-            color:white;
-            margin-top: 5%;
-            width: 200px;
-            
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -27,9 +18,9 @@
        </div>
         	 	
 	    <svg version="1.1" id="Mapa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 width="283.465px" height="566.93px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
+		 width="250px" height="550px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
 		 xml:space="preserve">
-	        <image display="none" overflow="visible" width="341" height="590" xlink:href="Region4.png"  transform="matrix(0.9775 0 0 0.9775 -267.0527 -569.5352)">
+	        <image display="none" overflow="visible" xlink:href="Region4.png"  transform="matrix(0.9775 0 0 0.9775 -267.0527 -569.5352)">
 	        </image>
 	        <g>
 		
@@ -275,26 +266,27 @@
 	    </svg>
 		
 	 </div>
-     <div class="col-sm-6" style="margin-top:3%; text-align:center;">  
-         <div id="nombre-columna">
-            <p style="color:white; font-size:20pt; display:inline-flex;">SELECIONE UNA COMUNA</p>
+     <div class="col-sm-6" 
+     style="padding:2%; text-align: center;">  
+         <div id="nombre-columna" style="border-radius: 3px;">
+            <p style="text-align: center; padding-top: 10px";>SELECIONE UNA COMUNA</p>
          </div>
-          <div class="form-group">
-             <p class="col-sm-6" style="vertical-align: center;">Cantidad Habitantes</p>
+          <div class="form-group" style="display: inline-block;">
+             <p class="col-sm-6" style="vertical-align: center;" >Cantidad Habitantes</p>
              <div class="col-sm-6">
-             <p style="font-size:28pt; font-family: 'Oswald', sans-serif;">298,976</p>
+             <p style=" font-size:20pt; font-family: 'Oswald', sans-serif;">298,976</p>
              </div>
           </div> 
-         <div class="form-group">
-             <p class="col-sm-6" style="vertical-align: center;">Provincia</p>
+         <div class="form-group" style="display: inline-block; text-align: center;">
+             <p class="col-sm-6" style="padding-top: 8px;">Provincia</p>
              <div class="col-sm-6">
-             <p style="font-size:28pt; font-family: 'Oswald', sans-serif;">Elqui</p>
+             <p style="font-size:20pt; font-family: 'Oswald', sans-serif;">Elqui</p>
              </div>
           </div> 
-          <div class="form-group">
-             <p class="col-sm-6" style="vertical-align: center;">Distrito</p>
+          <div class="form-group" style="display: inline-block;">
+             <p class="col-sm-6" style="padding-top: 8px;">Distrito</p>
              <div class="col-sm-6">
-             <p style="font-size:28pt; font-family: 'Oswald', sans-serif;">N°9</p>
+             <p style="font-size:20pt; font-family: 'Oswald', sans-serif;">N°9</p>
              </div>
           </div>  
           <img style="vertical-align:center;" class="img-responsive center-block" src="images/EE.png" width="190">	
