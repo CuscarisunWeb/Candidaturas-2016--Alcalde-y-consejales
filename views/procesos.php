@@ -104,9 +104,7 @@
         <?php  };?>       
       </tbody>
     </table>
-
 <!-- CONCEJALES -->
-
     <h2 class="bg-primary" style="padding:1% 0 1% 1%; margin-bottom:-1px;">Concejales</h2>
     <table class="table table-hover">
     <tbody>
@@ -116,11 +114,7 @@
           while($fila = $conexion->extraer_registro())
           {
               $comuna = utf8_encode($fila['nom_comuna']);                                                              
-          }
-        
-        
-        
-         
+          }                                 
           $consulta = "SELECT * FROM concejales WHERE id_comuna = ".$id_com."";         
           $conexion->consulta($consulta);                      
           while($fila = $conexion->extraer_registro())
@@ -129,8 +123,7 @@
               $lista_2 = utf8_encode($fila['lista']);
               $coalicion_2 = utf8_encode($fila['coalicion']);
               $partido_2 = utf8_encode($fila['partidopol']);                                  
-              $patrimonio_2 = utf8_encode($fila['patrimonio_link']);                                              
-          
+              $patrimonio_2 = utf8_encode($fila['patrimonio_link']);                                                        
           ?>
        <tr>
            <td style="vertical-align:middle; text-align:center;">
@@ -152,8 +145,5 @@
        <?php }; ?>              
     </tbody>
     </table>
-<script>
-    
-</script>
 </body>
 </html>

@@ -270,10 +270,9 @@
 	 </div>
 
 	<!-- Tabla Poblacion -->
-     <div class="col-sm-6" 
-     style="padding:2%; text-align: center;">  
+     <div class="col-sm-6" style="padding:2%; text-align: center;" id="esta">  
          <div id="nombre-columna" style="border-radius: 3px;">
-            <p style="text-align: center; padding-top: 10px";>POBLACIÓN</p>
+            <p style="text-align: center; padding-top: 10px;" id="pob">POBLACIÓN</p>
          </div>
           <div class="form-group" style="display: inline-block;">
              <p class="col-sm-6" style="vertical-align: center; padding-top: 5px" >Cantidad Habitantes</p>
@@ -339,6 +338,17 @@
                  },
                  error: function(error){
                      alert(error);
+                 }
+             });
+              $.ajax({
+                 type: 'POST',
+                 url:"<?php echo URL;?>index/estadistica",
+                 data: datos,
+                 success: function(dat){
+                     $("#esta").html(dat);
+                 },
+                 error: function(erro){
+                     alert(erro);
                  }
              });
               

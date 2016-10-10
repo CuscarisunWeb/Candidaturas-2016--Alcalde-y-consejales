@@ -60,6 +60,12 @@
            $this->view->render('procesos');          
            
       } 
+      function estadistica()
+      {
+          # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
+           $this->view->render('estadistica');          
+           
+      } 
       
             
   }
