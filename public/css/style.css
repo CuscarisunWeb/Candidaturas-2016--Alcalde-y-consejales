@@ -3,6 +3,60 @@
     height: 50px;
     fill: #fff;
 }
+/* ESTILO DE ENCUESTAS */
+.tusencuestas_encuesta
+{
+    /* Define aquí los estilos de la encuesta en general */
+    /* Por ejemplo, dale un color de fondo:*/
+    background-color: #f2f2f2;
+    
+}
+
+.tusencuestas_pregunta
+{
+    /* Define aquí el estilo de la pregunta */
+    /* Por ejemplo, haz que el título de la encuesta (la pregunta) esté en negrita*/
+    font-weight: bold;
+    
+}   
+
+.tusencuestas_respuestas
+{
+    /* Define aquí el estilo de las respuestas */
+    /* Por ejemplo, haz que las respuestas estén en azul:*/
+    color: blue;
+    
+} 
+
+.tusencuestas_inferior
+{
+    /* Define aquí el estilo de la parte inferior de la encuesta */
+    /* Por ejemplo: */
+    font-size: 9px;
+    color: blue;
+   
+}
+
+a.tusencuestas_inferior
+{
+    /* También referido a la parte inferior, pero en particular a los enlaces*/
+    /* Por ejemplo:*/
+    color: red;
+    
+}
+
+input.tusencuestas_inferior
+{
+    /* También referido a la parte inferior, pero en particular al botón de votar */
+    /* Por ejemplo:*/
+    font-family: verdana,tahoma,sans-serif;
+    font-size: 10px;    
+    color:black;
+    text-decoration:normal; 
+    border: 1px groove black;
+    
+}
+
 /**** css del gif de carga ***/
 .gif1{
     text-align: center;
@@ -22,24 +76,28 @@
         }
 
 #nombre-columna {
-    background-color:#666666; 
+    background-color:#666;
+    margin-top: 10px;
     min-height:50px; 
     margin-bottom: 1em;
     width: 100%;
     color:white; 
-    font-size:16pt;     
+    font-size:16pt;
     
 }
 
 #comuna {
-            background-color: #666;
-            color:white;
-            margin-top: 10%;
-            width: 100%;
-            border-radius: 2px;
-            padding: 5px;
-            font-size:16pt; 
-            
+    background-color: #666;
+    min-height:50px;
+    color:white;
+    margin-top: 10px;
+    width: auto;
+    border-radius: 2px;
+    padding: 5px; 
+    font-family: 'Oswald';
+    font-size: 26pt;
+    font-weight: 400;
+
 }
 
 /*! Estilo de Noticias */
@@ -63,10 +121,11 @@ section.info-collapse  {
     
 }
 
-.titulo {
+.titulo{
 
     font-family: 'Oswald';
     font-size: 16pt;
+    font-size: 700;
 }
 
 .bajada {
@@ -77,200 +136,19 @@ section.info-collapse  {
 
 /*! Transiciones de Mapa */
 #Mapa {
-    margin-top: -50px;
+    margin-top: -40px;
     margin-bottom: -50px;
 }
 
-.select:hover{
+.select:active {
     cursor: pointer;
+    fill: #005ea9;
 }
 
-#laSerena:hover{
+.select:hover {
+    cursor: pointer;
     fill :#64b8c6;
     -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-
-#paihuano:hover{
-    fill :#64b8c6;
-        -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#rioHurtado:hover{
-    fill :#64b8c6;
-        -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-} 
-#laHiguera:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#andacollo:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#vicuna:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#coquimbo:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#ovalle:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#montePatria:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#salamanca:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#illapel:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#losVilos:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#combarbala:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#canela:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
-    fill 0.5s ease-out;
-    -moz-transition: 
-    fill 0.5s ease-out;
-    -o-transition: 
-    fill 0.5s ease-out;
-    -ms-transition: 
-    fill 0.5s ease-out;
-    transition: 
-    fill 0.5s ease-out;
-}
-#punitaqui:hover{
-     fill :#64b8c6;
-         -webkit-transition: 
     fill 0.5s ease-out;
     -moz-transition: 
     fill 0.5s ease-out;

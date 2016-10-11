@@ -14,11 +14,11 @@ if(phpversion() == '5.4.3')
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?php echo URL?>public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
 <body>
 <!-- ALCALDES -->
-    <h2 class="bg-primary" style="padding:1% 0 1% 1%; margin-bottom:-1px;">Alcaldes</h2>
+    <h2 class="bg-primary" style="padding:15px; margin-bottom:-1px; font-size: 16pt;">Alcaldes</h2>
     <table class="table table-hover">
       <tbody>
 <!-- huincha UNO -->
@@ -92,19 +92,19 @@ if(phpversion() == '5.4.3')
               </td>
           </tr>
 <!-- Collapse col01 -->
+
         <tr class="collapse" id="col<?php echo $id;?>">
           <td colspan="5" style="padding-left: 2em;">
             <section class="info-collapse">
               <div class="info-pro">    
               <b>Profesión/actividad:</b> <?php echo $profesion;?><br>
-              <b>Edad:</b> 65 años<br>
               <b>Estado civil:</b> <?php echo $civil;?><br>
             </div>
-           <!-- <div class="noticia">
+          <div class="noticia">
               <div class="foto_not"><?php echo $foto_noticia;?></div>
               <div class="titulo"><?php echo $titulo;?></div>
               <div class="bajada"><?php echo $bajada;?></div>
-            </div>-->
+          </div>
             </section>
           </td>
         </tr> 
@@ -112,7 +112,7 @@ if(phpversion() == '5.4.3')
       </tbody>
     </table>
 <!-- CONCEJALES -->
-    <h2 class="bg-primary" style="padding:1% 0 1% 1%; margin-bottom:-1px;">Concejales</h2>
+    <h2 class="bg-primary" style="padding:15px; margin-bottom:-1px; font-size: 16pt;">Concejales</h2>
     <table class="table table-hover">
     <tbody>
       <?php 

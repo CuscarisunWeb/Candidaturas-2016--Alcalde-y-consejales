@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="<?php echo URL?>public/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo URL?>public/css/animate.css">
     <link rel="stylesheet" href="<?php echo URL?>public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -14,14 +14,14 @@
 	 <div class="row">
 	 <div class="col-sm-6" style="text-align:center;">	
        <div class="row">
-           <div class="col-sm-6 col-sm-offset-3">
-               <div id="comuna">Comunas</div>
+           <div class="col-sm-12">
+               <div id="comuna">SELECCIONE UNA COMUNA</div>
            </div>
        </div>
 
     <!-- Tabla Mapa -->	
 	    <svg version="1.1" id="Mapa" class="pulse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 width="250px" height="550px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
+		 width="300px" height="620px" viewBox="0 0 283.465 566.93" enable-background="new 0 0 283.465 566.93"
 		 xml:space="preserve">
 	        <image display="none" overflow="visible" xlink:href="Region4.png"  transform="matrix(0.9775 0 0 0.9775 -267.0527 -569.5352)">
 	        </image>
@@ -57,23 +57,7 @@
 			c-4.445,0.103-9.228,2.603-12.109-3.156c-2.443-3.257-4.073-10.597-9.778-6.518c0,0.812-0.819,2.444-0.819,2.444
 			c-5.396,1.012-13.015-4.862-13.015-4.862s-7.564-13.379-8.998-19.598c0-0.813-1.624-2.444-3.258-3.262
 			C159.604,225.506,155.524,223.059,151.446,223.059z"/>
-		
-			<path id="rio" class="select" fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M116.394,278.495c0.076-0.271,0.177-0.524,0.292-0.76C116.324,277.924,116.021,278.126,116.394,278.495z"/>
-		
-			<path id="Comuna" class="select" fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M116.687,277.735c0.179-0.09,0.363-0.176,0.5-0.277c0.007-0.184,0.019-0.363,0.019-0.557
-			C117.008,277.161,116.832,277.437,116.687,277.735z"/>
-		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M110.688,289.093c-0.09,0.214-0.186,0.419-0.277,0.627C110.559,289.603,110.688,289.409,110.688,289.093z"/>
-		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M82.152,291.54c-0.602,1.197-0.658,2.15-0.362,2.94C82.163,293.677,82.321,292.715,82.152,291.54z"/>
-		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M131.064,330.672c-0.258-0.334-0.526-0.628-0.809-0.909C130.278,330.253,130.395,330.672,131.064,330.672z"/>
-		
+				
 			<path id="14" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M111.501,303.766c-3.262,0.819-5.709,4.894-8.152,3.265c-1.582-0.794-1.636-3.877-3.121-6.293
 			c-3.577,1.612-7.408,1.543-10.741-1.047c-2.462-1.846-6.78-2.762-7.698-5.208c-1.423,3.095-6.184,3.75-9.42,4.396
@@ -109,9 +93,6 @@
 			c0.815,0,2.443,0,2.443,0.814c-0.533,2.15-1.958,3.5-3.827,4.373c1.293,1.781,0.613,5.415,1.384,5.415
 			c8.149,2.442,20.379,0,20.379,12.23c0,1.625,3.262,1.625,4.074,2.438c0.723,1.812,0,2.979-1.094,3.86
 			C107.44,378.603,107.755,383.71,113.13,384.471z"/>
-		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M111.843,455.529c0.155-0.034,0.313-0.074,0.471-0.129C112.11,455.402,111.957,455.451,111.843,455.529z"/>
 		
 			<path id="3" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M119.652,461.107c0,0,0.817,0,1.63,0c-4.074-1.632-5.707-5.703-9.781-4.891c0,0,0-0.455,0.342-0.684
@@ -168,10 +149,6 @@
 			c0,2.447,0.813,4.893,0.813,7.337c0,0,0.302-0.002,0.539-0.187c0.095-0.208,0.19-0.414,0.277-0.626c0,0.316-0.128,0.51-0.277,0.626
 			c-2.265,5.054-6.048,9.158-10.179,11.018C101.713,303.153,101.767,306.241,103.35,307.03z"/>
 		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M117.187,277.458c0.197-0.142,0.279-0.319,0.034-0.578c-0.006,0.008-0.011,0.018-0.016,0.023
-			C117.205,277.095,117.193,277.274,117.187,277.458z"/>
-		
 			<path id="13" class="select"  fill="#0093E5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M44.648,353.496c2.447,4.075,8.155,3.26,12.231,2.445c-0.816,0.814,0.813,1.63,0.813,2.441c7.338-4.071-0.813-9.781-0.813-16.3
 			c0-1.634-3.26,0-4.892-0.816c1.632-4.887,0-7.338-3.258-11.415c2.443-0.814,3.258-3.262,5.707-4.074
@@ -192,10 +169,6 @@
 			c0,0-1.496,2.719-1.769,3.128c-0.271,0.405-0.544,4.212-0.544,4.212l0.953,4.101v3.371l1.359,5.431l-1.359,3.804l1.493,1.495v2.037
 			v9.242l2.038,8.284l0.956,2.312l-0.956,3.672l2.72,3.671l2.446,6.926l-0.137,2.178l-1.496,2.855l-0.813,6.249l1.902,2.308
 			l-0.546,10.604v3.529l2.716,3.398l0.135,0.643C39.812,360.007,46.276,358.368,44.648,353.496z"/>
-		
-			<path id="Comuna" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
-			M117.205,276.903c0.005-0.011,0.01-0.018,0.016-0.023c-0.006-0.004-0.008-0.01-0.014-0.017
-			C117.207,276.876,117.205,276.888,117.205,276.903z"/>
 		
 			<path id="6" class="select"  fill="#0083CC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 			M45.466,250.779c3.264,1.627,7.337,0,10.598,0.815c0,0,0,0.355,0,0.812c0,0.816,0,0.816,0,1.634c0-0.817,0-0.817,0-1.634
@@ -235,9 +208,10 @@
 			c0-0.812-0.812-0.812-0.812-0.812c0,3.26,3.259,5.704,2.445,9.783c4.075-0.816,3.262,2.446,5.707,4.889
 			c2.443,1.632,5.703-0.818,8.967-1.626c2.442-5.708,4.89-12.236,10.598-14.679c1.628-0.813,5.707,4.893,9.788,1.633
 			c2.284-3.052-3.983-7.528-2.806-8.762c-3.684,0.619-7.373,0.764-11.06,2.239C109.868,225.506,109.054,222.245,111.501,218.981z"/>
-		     <g>
-			
-	        <path id="7" class="select"  fill="#0071BC" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
+		     
+
+			<g id="7" class="select"  fill="#0071BC">
+	        <path stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="bevel" stroke-miterlimit="10" d="
 	        M176.618,100.466l-3.469-6.418l1.733-4.586l-1.427-2.241l-1.935-1.018v-7.85l-3.464-4.993l-2.444-4.785l1.629-4.687l-2.445-2.145
 	        c0,0-1.732,0.818-3.159,0.912c-1.428,0.104-0.918-0.096-2.443-0.61c-1.532-0.506-1.63-1.018-3.366-0.912
 	        c-1.733,0.101-4.688,2.125-4.688,2.125s-1.123-0.395-2.142,0.01c-1.019,0.41-2.345-0.097-2.747,0
@@ -258,20 +232,20 @@
 	        c0.054-0.025,0.114-0.054,0.175-0.074c-0.063,0.021-0.121,0.049-0.175,0.074c3.065,1.798,6.765,2.438,9.954,5.631
 	        c1.634-4.894,0-10.603,1.634-13.86c7.335-10.597,3.263-22.009,4.888-32.609c0.679-4.733,4.162-1.614,8.12-1.343l-0.583-0.385
 	        l2.145-3.467v-2.446h0.004L176.618,100.466L176.618,100.466z"/>
-			<path id="Comuna" class="select"  fill="#0071BC" d="M46.83,91.939h2.311v-2.582l-2.311-1.635l-3.261,3.671l-1.223,3.531c0,0-0.274,1.499,0,2.041
+			<path d="M46.83,91.939h2.311v-2.582l-2.311-1.635l-3.261,3.671l-1.223,3.531c0,0-0.274,1.499,0,2.041
 				c0.27,0.543,1.358,1.77,1.358,1.77l1.979-0.546l1.553-0.271l0.407-2.989l-0.135-1.693L46.83,91.939z"/>
-			<path id="Comuna" class="select"  fill="#0071BC" d="M44.928,131.34l-1.494,0.818c0,0-1.87,0.677-1.208,1.087c0.664,0.404,0.539,0.677,1.279,0.677
+			<path d="M44.928,131.34l-1.494,0.818c0,0-1.87,0.677-1.208,1.087c0.664,0.404,0.539,0.677,1.279,0.677
 				c0.744,0,1.301-0.272,2.18,0c0.872,0.273,1.28,0.953,1.28,0c0-0.954,0-2.039,0-2.039L44.928,131.34z"/>
-			<path id="Comuna" class="select"  fill="#0071BC" d="M43.976,137.049c0,0,0.273,0.953,0,1.768c-0.271,0.816-0.942,1.633,0.548,1.633c1.489,0,2.44,0,2.44,0
+			<path d="M43.976,137.049c0,0,0.273,0.953,0,1.768c-0.271,0.816-0.942,1.633,0.548,1.633c1.489,0,2.44,0,2.44,0
 		 		s0.952-0.544,1.089-1.705c0.137-1.15,0.137-1.15,0.137-1.15l-1.225-0.543l-1.281-0.817L43.976,137.049z"/>
-		    </g>
+			</g>
 		</g>
 	    </svg>
 		
 	 </div>
 
 	<!-- Tabla Poblacion -->
-     <div class="col-sm-6" style="padding:2%; text-align: center;" id="esta"></div>         
+     <div class="col-sm-6" id="esta"></div>         
 	  </div>
 
 	  <!-- Tabla de Alcaldes y Concejales -->
