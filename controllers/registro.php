@@ -9,20 +9,7 @@
       # metodo index      
        public function alcalde_insert()
       {
-            $imagen ="imagen.jpg";
-            $camino = $_POST['camino'];
-            $url = $camino."images/";
-            
-            $url = $url . basename($_FILES['foto']['name']);           
-           /* if (file_exists($url)) {
-               $imagen = basename( $_FILES['foto']['name']);
-              
-            } else*/
-           /*if(*/move_uploaded_file($_FILES['foto']['tmp_name'], $url);/*)*/ 
-           /* {*/ 
-               $imagen = basename( $_FILES['foto']['name']);
-                /*echo '<script>alert("'.$imagen.'")</script>';*/
-           /* }*/           
+                
               # Array Asociativo
           $dato = [   
               'nombre' => $_POST['nombre'],
@@ -37,7 +24,7 @@
               'twitter' => $_POST['twitter'],
               'web' => $_POST['web'],
               'patrimonio' => $_POST['patrimonio'],
-              'foto' => $imagen
+              'foto' => $_POST['foto']
           ];                
               $this->model->alcalde_insert($dato);                                    
       }                                                   

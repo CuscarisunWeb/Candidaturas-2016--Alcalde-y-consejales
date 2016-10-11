@@ -28,7 +28,7 @@ if(phpversion() == '5.4.3')
 	<div class="clearfix visible-xs"></div>			
 	
 </div>
-<form class="form" method="post" enctype="multipart/form-data" action="<?php echo URL?>registro/alcalde_insert" >
+<form class="form" method="post" action="<?php echo URL?>registro/alcalde_insert" >
  <input type="text" value="<?php echo URL;?>" name="camino" id="camino" hidden="hidden" >
 <div class="row">
     <div class="col-sm-6">
@@ -93,7 +93,7 @@ if(phpversion() == '5.4.3')
 	</div>
 	<div class="col-sm-6">
         <div class="form-group">
-	        <label class="col-sm-4">Entrevistas</label>
+	        <label class="col-sm-4">Entrevistas:</label>
 	        <div class="col-sm-8">
 	           <input type="text" class="form-control" id="entrevista" name="entrevista" required>
 	        </div>	        
@@ -125,7 +125,7 @@ if(phpversion() == '5.4.3')
 	    <div class="form-group">
 	        <label class="col-sm-4">Fotografía:</label>
 	        <div class="col-sm-8">
-	          <input type="file" class="form-control" id="foto" name="foto" required>
+	          <input type="text" class="form-control" id="foto" name="foto" required>
 	        </div>	        
 	    </div>
 	    <div class="form-group">
