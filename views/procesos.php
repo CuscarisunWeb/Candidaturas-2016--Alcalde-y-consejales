@@ -39,12 +39,7 @@ if(phpversion() == '5.4.3')
               $patrimonio = utf8_encode($fila['patrimonio_link']);              
               $twitter = utf8_encode($fila['twitter_link']);              
               $imagen = $fila['foto_link'];
-              $id = $fila['id_alcaldes'];
-
-              $titulo = utf8_encode($fila['noticia_titulo']);
-              $bajada = utf8_encode($fila['noticia_bajada']);
-              $web = utf8_encode($fila['website_link']);
-              $foto_noticia = ($fila['link_foto']);
+              $id = $fila['id_alcaldes'];              
           
           ?>
           <tr>
@@ -104,11 +99,11 @@ if(phpversion() == '5.4.3')
               <b>Edad:</b> 65 años<br>
               <b>Estado civil:</b> <?php echo $civil;?><br>
             </div>
-            <div class="noticia">
+           <!-- <div class="noticia">
               <div class="foto_not"><?php echo $foto_noticia;?></div>
               <div class="titulo"><?php echo $titulo;?></div>
               <div class="bajada"><?php echo $bajada;?></div>
-            </div>
+            </div>-->
             </section>
           </td>
         </tr> 
