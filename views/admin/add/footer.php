@@ -12,5 +12,9 @@
 <script src="<?php echo URL?>public/plugins/tinymce/jquery.tinymce.min.js"></script>
 <!-- All functions for this theme + document.ready processing -->
 <script src="<?php echo URL?>public/js/devoops.js"></script>
+
+
+
+
 </body>
 </html>
