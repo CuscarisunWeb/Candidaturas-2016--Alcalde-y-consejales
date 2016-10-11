@@ -35,12 +35,16 @@ if(phpversion() == '5.4.3')
               $coalicion = utf8_encode($fila['coalicion']);
               $partido = utf8_encode($fila['partidopol']);              
               $entrevista = utf8_encode($fila['entrevista_link']);              
-              $facebook = utf8_encode($fila['facebook_link']);              
-              $web = utf8_encode($fila['website_link']);              
+              $facebook = utf8_encode($fila['facebook_link']);                           
               $patrimonio = utf8_encode($fila['patrimonio_link']);              
               $twitter = utf8_encode($fila['twitter_link']);              
               $imagen = $fila['foto_link'];
               $id = $fila['id_alcaldes'];
+
+              $titulo = utf8_encode($fila['noticia_titulo']);
+              $bajada = utf8_encode($fila['noticia_bajada']);
+              $web = utf8_encode($fila['website_link']);
+              $foto_noticia = ($fila['link_foto']);
           
           ?>
           <tr>
@@ -101,8 +105,9 @@ if(phpversion() == '5.4.3')
               <b>Estado civil:</b> <?php echo $civil;?><br>
             </div>
             <div class="noticia">
-              <div class="titulo">titulo titulo tiutulotitulo titulo tiutulo</div>
-              <div class="bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui molestias labore quaerat culpa sapiente ad, odio minima, assumenda architecto obcaecati error eum ut sint. Enim optio, earum suscipit aspernatur</div>
+              <div class="foto_not"><?php echo $foto_noticia;?></div>
+              <div class="titulo"><?php echo $titulo;?></div>
+              <div class="bajada"><?php echo $bajada;?></div>
             </div>
             </section>
           </td>
