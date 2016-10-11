@@ -37,6 +37,7 @@ if(phpversion() == '5.4.3')
               $entrevista = utf8_encode($fila['entrevista_link']);              
               $facebook = utf8_encode($fila['facebook_link']);                           
               $patrimonio = utf8_encode($fila['patrimonio_link']);              
+              $web = utf8_encode($fila['website_link']);              
               $twitter = utf8_encode($fila['twitter_link']);              
               $imagen = $fila['foto_link'];
               $id = $fila['id_alcaldes'];              
