@@ -45,7 +45,7 @@ if(phpversion() == '5.4.3')
           ?>
           <tr>
             <td style="width:10%;">
-             <img src="<?php echo URL?>images/alcaldes/<?php echo $imagen?>" class="center-block" width="150" height="150">
+             <img src="<?php echo URL?>images/alcaldes/<?php echo $imagen?>" class="center-block" width="100" height="100">
             </td>
             <td style="vertical-align:middle;">
               <h4><?php echo $nombre;?></h4>              
