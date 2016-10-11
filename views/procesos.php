@@ -54,7 +54,7 @@ if(phpversion() == '5.4.3')
             </td>
             <!-- botones redes sociales -->
             <td style="vertical-align:middle; text-align: center;">
-              <a href="<?php echo $entrvista;?>"  target="_blank"class="btn btn-primary btn-sm">Entrevista</a>
+              <a href="<?php echo $entrevista;?>"  target="_blank"class="btn btn-primary btn-sm">Entrevista</a>
               <a href="<?php echo $facebook;?>"  target="_blank"class="btn btn-primary btn-sm">f</a>
               <a href="<?php echo $twitter;?>" target="_blank"class="btn btn-primary btn-sm">t</a>
               <a href="<?php echo $web;?>" target="_blank"class="btn btn-primary btn-sm">w</a>
